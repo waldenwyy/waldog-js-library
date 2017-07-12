@@ -121,15 +121,6 @@ function lookUpProfile(firstName, prop){
 lookUpProfile("Akira", "likes");
 //end profile lookup
 
-//Iterate over Arrays with map
-var oldArray = [1,2,3,4,5];
-
-var newArray = oldArray.map(function(val){
-  return val + 3;
-});
-//End Iterate over Arrays with map
-
-
 //Make Object Properties Private
 var Car = function() {
   // this is a private variable
@@ -150,6 +141,15 @@ myCar.accelerate(2);
 myCar.decelerate();
 myCar.getSpeed();//will get 7
 //End Make Object Properties Private
+
+
+//Iterate over Arrays with map
+var oldArray = [1,2,3,4,5];
+
+var newArray = oldArray.map(function(val){
+  return val + 3;
+});
+//End Iterate over Arrays with map
 
 
 //Condense arrays with reduce
@@ -182,3 +182,26 @@ var newArray = [];
 var concatMe = [4,5,6];
 newArray = oldArray.concat(concatMe); // [1,2,3,4,5,6]
 //End Concatenate Arrays with concat
+
+
+//Split Strings with split
+var string = "Split me into an array";
+var array = [];
+array = string.split(" ");
+//End Split Strings with split
+
+
+
+
+// Algorithm 
+
+//Reverse a String
+function reverseString(str) {
+  var array = [];
+  array = str.split("");//["h", "e", "l", "l", "o"]
+  array.reverse();
+  str = array.join("");
+  return str;
+}
+reverseString("hello");
+//End Reverse a String
