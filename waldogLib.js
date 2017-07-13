@@ -205,3 +205,53 @@ function reverseString(str) {
 }
 reverseString("hello");
 //End Reverse a String
+
+
+//Factorialize a Number
+function factorialize(num) {
+  if (num < 0) {  
+        return -1;  
+    }  
+    // If the number is 0, its factorial is 1.  
+    else if (num == 0) {  
+        return 1;  
+    }  
+    // Otherwise, call this recursive procedure again.  
+    else {  
+        return (num * factorialize(num - 1));  
+    }  
+}
+factorialize(5);
+//End Factorialize a Number
+
+
+//Check for Palindromes
+function palindrome(str) {
+  // Good luck!
+  var new_str = str.toLowerCase().replace(/[^0-9a-z]/gi, '');
+  return new_str==new_str.split("").reverse().join("");
+}
+palindrome("leyeL");
+//End Check for Palindromes
+
+//Find the Longest Word in a String
+function findLongestWord(s) {
+  return s.split(' ').reduce(function(x, y) {
+      return Math.max(x, y.length);
+    }, 0);
+}
+findLongestWord("The quick brown fox jumped over the lazy dog");
+//End Find the Longest Word in a String
+
+
+
+//Title Case a Sentence
+function titleCase(str) {
+  var array = str.toLowerCase().split(" ");
+  var newArray = array.map(function(val){
+    return val.replace(val.charAt(0), val.charAt(0).toUpperCase());
+  });
+  return newArray.join(" ");
+}
+titleCase("I'm a little tea pot");
+//End Title Case a Sentence
