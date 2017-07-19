@@ -1,0 +1,72 @@
+
+@media print{
+  body { min-width:initial; }
+  .content-wrap img{
+    display: none;
+  }
+  .content-wrap {
+    width:auto !important;
+  }
+  .winning-number-hero .content-wrap .inner{
+    min-height: auto !important;
+  }
+  .mobile-game-selector .mobile-game-selector-list {
+    display: none;
+  }
+  .draw-container, .winning-numbers-check, .slim-jackpot, .title-module, .tab-module, .recent-winners-spotlight, .group-play-slider, .help-info, .playsmart, .olg-logo, .visible-xs, .link-list, #collapseLegal .well p:first-child, .button-container, .sitemap, .desk-language-nav, .desk-global-nav{
+    display: none !important;
+  }
+  #collapseLegal, .collapse {
+    display: block !important;
+  }
+  .sprites.encore-icon {
+      text-indent: 1px !important;
+      text-transform: uppercase;
+      height: 33px !important;
+  }
+  .main-content{
+    text-align: center !important;
+    margin:0 auto !important;
+    display: block !important;
+    width:auto !important;
+  }
+ .winning-number-hero{
+  
+    width: auto;
+ }
+  .disclaimer-info .container {
+    border-top:1px solid #000000;
+    padding-top:20px;
+  }
+  .guaranteed-prize-modal {
+    opacity: 1 !important;
+    display: block !important;
+    position: relative !important;
+  }
+  .guaranteed-prize-modal .modal-dialog { 
+    top: 160px !important;
+    margin-bottom: 0 !important;
+  }
+  
+  .guaranteed-prize-modal .modal-dialog .modal-content { 
+    display: block !important;
+    opacity: 1 !important;
+    position: relative !important;
+
+    border: 0 !important;
+  }
+  .guaranteed-prize-modal .modal-dialog .modal-content .close-container {
+    display: none !important;
+  }
+  // .modal.fade{
+  //   padding-top: 130px;
+  // }
+}
+
+// @media (max-width: 434px) {
+//   @media print{
+//     .guaranteed-prize-modal .modal-dialog { 
+//       top: 250px !important;
+//     }
+//   }
+//}
